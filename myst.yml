@@ -1,0 +1,22 @@
+version: 1
+project:
+  title: Redo
+  authors:
+    - name: Jan Emmanuel Samson
+  github: executablebooks/jupyter-book
+  bibliography:
+    - references.bib
+  exports:
+    - format: pdf
+      template: plain_latex_book
+      output: exports/book.pdf
+  toc:
+    - file: index.md
+    - title: Publications
+      children:
+        - file: wu2020/index.ipynb
+        - file: montecillo2022/index.ipynb
+site:
+  options:
+    logo: ''
+  template: book-theme
